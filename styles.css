@@ -1,0 +1,29 @@
+body {
+    background-color: #2E2749;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(211, 212, 202);
+    text-align: center;
+    line-height: 1.5;
+}
+main {
+    margin-top: 5rem;
+    display: grid;
+    place-items: center;
+}
+
+.text-box-container {
+    margin-inline: 1rem;
+    border: 3px solid rgb(211, 212, 202);
+    padding: 5rem;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.text-box {
+    background-color: #524a76;
+    width: 15rem;
+    padding-inline: 2rem;
+}
