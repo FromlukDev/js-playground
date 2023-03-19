@@ -4,26 +4,40 @@ body {
     color: rgb(211, 212, 202);
     text-align: center;
     line-height: 1.5;
+    width: 100vw;
 }
+
 main {
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: grid;
     place-items: center;
 }
 
+/* .title {
+    margin-bottom: 5rem;
+} */
+
 .text-box-container {
+    width: min(70%, 80rem);
     margin-inline: 1rem;
     border: 3px solid rgb(211, 212, 202);
     padding: 5rem;
-    width: fit-content;
-    height: fit-content;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 5rem;
+    justify-content: center;
+    gap: 3rem;
+}
+@media screen and (max-width: 786px) {
+    .text-box-container {
+        gap: 5rem;
+        padding: 2rem;
+        margin-inline: 0;
+    }
 }
 
 .text-box {
     background-color: #524a76;
-    width: 15rem;
-    padding-inline: 2rem;
+    width: min(40rem, 15rem);
+    padding: 2rem;
 }
