@@ -886,9 +886,9 @@ Circle.lenght => rerturns the number of arguments in the function.
 // let address2 = new Address('a', 'b', 'c');
 
 // function Address(street, city, zipCode) {
-//     this.street = street;
-//     this.city = city;
-//     this.zipCode = zipCode;
+    // this.street = street;
+    // this.city = city;
+    // this.zipCode = zipCode;
 // }
 
 // // Strict Equality
@@ -962,3 +962,69 @@ Circle.lenght => rerturns the number of arguments in the function.
 // ];
 
 // console.log(priceRanges);
+
+//***************************************/
+//                 ARRAYS
+//***************************************/
+
+// adding new elements
+// Finding elements
+// Removing elements
+// Splitting arrays
+// Combining arrays
+
+// Adding elements -> Arrays
+
+// const numbers = [3, 4];
+
+
+// // the push method
+
+// // adds to the end of the array
+// numbers.push(5, 6); 
+// // adds to the beginning of the array
+// numbers.unshift(1, 2); 
+// // adds to an specified position in the array
+// // 1° number -> index position.
+// // 2° deleteCount -> how many items to be deleted
+// // 3° items to be added (numbers, strings, etc...)
+// numbers.splice(2, 0, 'a', 'b'); 
+// console.log(numbers)
+
+//*************************************/
+//*************************************/
+
+// Finding elements:
+
+// primitives:
+
+const numbers = [1, 2, 3, 1, 4];
+
+//Check if an element exists in an array
+console.log(numbers.indexOf('a')) // if it doesn't exist it will returns -> -1.
+
+//returns the last index or -1 if it doesn't exist
+console.log(numbers.lastIndexOf(1)); // returns 3
+
+// legacy to check if an element exists 
+console.log(numbers.indexOf(1) !== -1) // true
+console.log(numbers.indexOf(6) !== -1) // false
+
+console.log(numbers.includes(4)); //true
+console.log(numbers.includes(7)); // false
+
+//starting index option with a second argument(where the search will begin from)
+console.log(numbers.indexOf(1, 2));
+
+
+//* Testing this extansion for commments
+// * MyMethod
+// *! Depricated method, do not use.
+// TODO: Refactor this method!
+
+//* This is highlighted
+
+//? This is a query
+
+//TODO Create some test cases
+
